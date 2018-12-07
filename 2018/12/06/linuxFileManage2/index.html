@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="爱生活，爱学习">
 <meta property="og:description" content="常用的处理目录的命令 cd：切换目录 pwd：显示当前目录 mkdir：建立一个新的目录 mkdir [mp] directory name [m]：设置文件的权限 [p]：递归创建所有目录    rmdir：删除一个空的目录 [p]：连同上一级“空的”目录也一起删除      文件与目录管理 文件与目录的查看：ls [-aAdfFhilnrRSt] 文件或目录名称 [a]：全部文件，包括隐藏的文">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-07T12:04:28.000Z">
+<meta property="og:updated_time" content="2018-12-07T12:09:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux文件与目录管理">
 <meta name="twitter:description" content="常用的处理目录的命令 cd：切换目录 pwd：显示当前目录 mkdir：建立一个新的目录 mkdir [mp] directory name [m]：设置文件的权限 [p]：递归创建所有目录    rmdir：删除一个空的目录 [p]：连同上一级“空的”目录也一起删除      文件与目录管理 文件与目录的查看：ls [-aAdfFhilnrRSt] 文件或目录名称 [a]：全部文件，包括隐藏的文">
@@ -483,10 +483,10 @@
 </ul>
 </blockquote>
 <ul>
-<li><p>非纯文件文件：od</p>
-</li>
-<li><p>修改文件的时间或者创建新文件：touch</p>
-<ul>
+<li>非纯文件文件：od</li>
+</ul>
+<hr>
+<h3 id="修改文件的时间或者创建新文件：touch"><a href="#修改文件的时间或者创建新文件：touch" class="headerlink" title="修改文件的时间或者创建新文件：touch"></a>修改文件的时间或者创建新文件：touch</h3><ul>
 <li>Linux涉及到的三个文件时间：<ol>
 <li>修改时间（modification time，mtime）：当文件的<strong>内容数据</strong>更新时，就会更新这个时间；</li>
 <li>状态时间（status time，ctime）：当文件的<strong>状态（status）</strong>发生改变时，就会更新这个时间；</li>
@@ -497,8 +497,6 @@
 <li>a：仅自定义access time；</li>
 <li>c：仅修改文件的时间，若文件不存在则不建立新文件；</li>
 <li>m：仅修改mtime；</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -712,7 +710,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#常用的处理目录的命令"><span class="nav-number">1.</span> <span class="nav-text">常用的处理目录的命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件与目录管理"><span class="nav-number">2.</span> <span class="nav-text">文件与目录管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件内容的查看"><span class="nav-number">3.</span> <span class="nav-text">文件内容的查看</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件的默认权限：umask"><span class="nav-number">4.</span> <span class="nav-text">文件的默认权限：umask</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件的特殊权限：SUID、SGID、SBIT"><span class="nav-number">5.</span> <span class="nav-text">文件的特殊权限：SUID、SGID、SBIT</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#常用的处理目录的命令"><span class="nav-number">1.</span> <span class="nav-text">常用的处理目录的命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件与目录管理"><span class="nav-number">2.</span> <span class="nav-text">文件与目录管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件内容的查看"><span class="nav-number">3.</span> <span class="nav-text">文件内容的查看</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改文件的时间或者创建新文件：touch"><span class="nav-number">4.</span> <span class="nav-text">修改文件的时间或者创建新文件：touch</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件的默认权限：umask"><span class="nav-number">5.</span> <span class="nav-text">文件的默认权限：umask</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件的特殊权限：SUID、SGID、SBIT"><span class="nav-number">6.</span> <span class="nav-text">文件的特殊权限：SUID、SGID、SBIT</span></a></li></ol></div>
             
 
           </div>
