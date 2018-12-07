@@ -108,18 +108,18 @@
 
 
 
-<meta name="description" content="常用的处理目录的命令 cd：切换目录 pwd：显示当前目录 mkdir：建立一个新的目录 mkdir [mp] directory name [m]：设置文件的权限 [p]：递归创建所有目录    rmdir：删除一个空的目录 [p]：连同上一级“空的”目录也一起删除      文件与目录管理 文件与目录的查看：ls [-aAdfFhilnrRSt] 文件或目录名称 [a]:全部文件，包括隐藏的文">
+<meta name="description" content="常用的处理目录的命令 cd：切换目录 pwd：显示当前目录 mkdir：建立一个新的目录 mkdir [mp] directory name [m]：设置文件的权限 [p]：递归创建所有目录    rmdir：删除一个空的目录 [p]：连同上一级“空的”目录也一起删除      文件与目录管理 文件与目录的查看：ls [-aAdfFhilnrRSt] 文件或目录名称 [a]：全部文件，包括隐藏的文">
 <meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux文件与目录管理">
 <meta property="og:url" content="http://yoursite.com/2018/12/06/linuxFileManage2/index.html">
 <meta property="og:site_name" content="爱生活，爱学习">
-<meta property="og:description" content="常用的处理目录的命令 cd：切换目录 pwd：显示当前目录 mkdir：建立一个新的目录 mkdir [mp] directory name [m]：设置文件的权限 [p]：递归创建所有目录    rmdir：删除一个空的目录 [p]：连同上一级“空的”目录也一起删除      文件与目录管理 文件与目录的查看：ls [-aAdfFhilnrRSt] 文件或目录名称 [a]:全部文件，包括隐藏的文">
+<meta property="og:description" content="常用的处理目录的命令 cd：切换目录 pwd：显示当前目录 mkdir：建立一个新的目录 mkdir [mp] directory name [m]：设置文件的权限 [p]：递归创建所有目录    rmdir：删除一个空的目录 [p]：连同上一级“空的”目录也一起删除      文件与目录管理 文件与目录的查看：ls [-aAdfFhilnrRSt] 文件或目录名称 [a]：全部文件，包括隐藏的文">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-06T03:45:17.000Z">
+<meta property="og:updated_time" content="2018-12-07T12:04:28.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux文件与目录管理">
-<meta name="twitter:description" content="常用的处理目录的命令 cd：切换目录 pwd：显示当前目录 mkdir：建立一个新的目录 mkdir [mp] directory name [m]：设置文件的权限 [p]：递归创建所有目录    rmdir：删除一个空的目录 [p]：连同上一级“空的”目录也一起删除      文件与目录管理 文件与目录的查看：ls [-aAdfFhilnrRSt] 文件或目录名称 [a]:全部文件，包括隐藏的文">
+<meta name="twitter:description" content="常用的处理目录的命令 cd：切换目录 pwd：显示当前目录 mkdir：建立一个新的目录 mkdir [mp] directory name [m]：设置文件的权限 [p]：递归创建所有目录    rmdir：删除一个空的目录 [p]：连同上一级“空的”目录也一起删除      文件与目录管理 文件与目录的查看：ls [-aAdfFhilnrRSt] 文件或目录名称 [a]：全部文件，包括隐藏的文">
 
 
 
@@ -402,22 +402,23 @@
 <hr>
 <h3 id="文件与目录管理"><a href="#文件与目录管理" class="headerlink" title="文件与目录管理"></a>文件与目录管理</h3><ul>
 <li>文件与目录的查看：ls [-<strong>a</strong>A<strong>d</strong>fFhi<strong>l</strong>nrRSt] 文件或目录名称<ul>
-<li>[a]:全部文件，包括隐藏的文件</li>
-<li>[d]:仅列出文件本身，而不是列出目录内的文件数据</li>
-<li>[l]:详细信息</li>
+<li><font color="red">[a]</font>：全部文件，包括隐藏的文件</li>
+<li><font color="red">[d]</font>：仅列出目录本身，而不是列出目录内的文件数据</li>
+<li><font color="red">[l]</font>：详细信息</li>
 </ul>
 </li>
-<li>复制（cp）、删除（rm）与移动（mv）<ul>
+<li>复制（cp）、删除（rm）与移动（mv）</li>
 <li>cp [-adfilprsu] source destiation  <ul>
 <li>[i]：若目标文件已经存在，在覆盖时先询问</li>
 <li>[p]：连同文件的属性（权限，用户，时间）一起复制过去</li>
 <li>[r]：递归复制</li>
-<li>[s]:复制称为符号链接文件（symbolic link），亦称为快捷方式<br><font color="red"><strong>Note:</strong>复制时需要考虑：</font></li>
+<li>[s]:复制称为符号链接文件（symbolic link），亦称为快捷方式</li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
+<blockquote>
+<font color="red"><strong>Note:</strong>复制时需要考虑：</font>
+</blockquote>
 <blockquote>
 <ul>
 <li>是否需要完整的保留源文件信息？</li>
@@ -425,6 +426,115 @@
 <li>源文件是否为特殊文件，例如FIFO、socket等？</li>
 <li>源文件是否为目录？</li>
 </ul>
+</blockquote>
+<ul>
+<li>rm [-fir] file/dir<ul>
+<li>[f]：force,忽略不存在的文件，不会出现警告</li>
+<li>i：交互模式，在删除是会提醒</li>
+<li>r：递归删除</li>
+</ul>
+</li>
+<li>mv [-fiu] source destination<ul>
+<li>f: force,如果目标文件已经存在，不会询问直接覆盖</li>
+<li>i：如果目标文件已经存在，会询问覆盖</li>
+<li>u：如果目标文件已经存在，且source比较新，才会更新（update）</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="文件内容的查看"><a href="#文件内容的查看" class="headerlink" title="文件内容的查看"></a>文件内容的查看</h3><ul>
+<li>cat [AbEnTv] filename/dirname<ul>
+<li>b：打印出<strong>非空白</strong>行的行号</li>
+<li>n：打印出所有行的的行号</li>
+</ul>
+</li>
+<li>tac:从最后一行开始显示，cat倒着写</li>
+<li>nl [bnw] file：添加行号打印</li>
+<li>可翻页查看<ul>
+<li>more<ul>
+<li>空格键（space）：向下翻一页</li>
+<li>Enter：向下一行</li>
+<li>／字符串：向下查找字符串这个关键字</li>
+<li>b／ctrl+b：往回翻页</li>
+<li>:f：立刻显示出文件名及目前显示的行数 </li>
+</ul>
+</li>
+<li>less <ul>
+<li>pagedown：向下翻动一页</li>
+<li>pageup：向上翻动一页</li>
+<li>？字符串：向上查找字符串</li>
+<li>g：前进到这个数据的第一行</li>
+<li>G：前进到这个数据的最后一行</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>数据截取<ul>
+<li>head [-n number] filename :取出数据的前几行；</li>
+<li>tail [-n number] filename:取出文件的后门几行；</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li>查看莫文件的第五行到第十行数据</li>
+<li>head -n 10 1.txt|tail -n 5;</li>
+<li>(|):表示前面的命令所输出的信息，通过管道交由后续的命令继续使用</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>非纯文件文件：od</p>
+</li>
+<li><p>修改文件的时间或者创建新文件：touch</p>
+<ul>
+<li>Linux涉及到的三个文件时间：<ol>
+<li>修改时间（modification time，mtime）：当文件的<strong>内容数据</strong>更新时，就会更新这个时间；</li>
+<li>状态时间（status time，ctime）：当文件的<strong>状态（status）</strong>发生改变时，就会更新这个时间；</li>
+<li>读取时间（access time，atime）：当文件的<strong>内容被读取</strong>时，就会更新这个时间；</li>
+</ol>
+</li>
+<li>touch [-acdmt] file<ul>
+<li>a：仅自定义access time；</li>
+<li>c：仅修改文件的时间，若文件不存在则不建立新文件；</li>
+<li>m：仅修改mtime；</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>执行touch -t 201406150202 1.txt,可以发现该文件的mtime和atime都改变了，但是ctime没有改变；我们在复制文件的时候可以复制文件的所有属性，但是也无法复制文件的ctime这个属性；</p>
+</blockquote>
+<blockquote>
+<ul>
+<li>touch这个名利最常用来：<ul>
+<li>建立一个空的文件；</li>
+<li>将某个文件日期定义为目前（mtime与atime）；</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="文件的默认权限：umask"><a href="#文件的默认权限：umask" class="headerlink" title="文件的默认权限：umask"></a>文件的默认权限：umask</h3><ul>
+<li><p>可以通过umask查看文件的默认权限</p>
+<blockquote>
+<ul>
+<li>umask(0022);umask -S(u=rwx,g=rx,o=rx)  </li>
+<li>默认的文件最大权限为：666（没有可执行的权限）；目录权限为：777；</li>
+<li>建立文件是（-rw-rw-rw-）-(—–w–w-)=(-rw-r–r–);(666)-(022)=(644)</li>
+<li>建立目录时（drwxrwxrwx）-(—–w–w-)=(-rwx-r-xr-x);(777)-(022)=(755)</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h3 id="文件的特殊权限：SUID、SGID、SBIT"><a href="#文件的特殊权限：SUID、SGID、SBIT" class="headerlink" title="文件的特殊权限：SUID、SGID、SBIT"></a>文件的特殊权限：SUID、SGID、SBIT</h3><ul>
+<li>setuid(SUID): 针对命令和<strong>二进制程序</strong>的，当普通用户执行某个(passwd)命令的时候，可以拥有这个命令对应用户的权限,即让普通用户可以以root用户的角色执行程序或命令。</li>
+<li>setgid(SGID)：希望一个目录被多个用户(同属于一个组)共享，同一个组的用户可以处理</li>
+<li>stick bit(SBIT) (粘贴位)就是：除非目录的属主和root用户有权限删除它，除此之外其它用户不能删除和修改这个目录</li>
+</ul>
+<blockquote>
+<p>参考1：鸟哥的Linux私房菜第六章：Linux的文件与目录管理<br><br>参考2：<a href="https://blog.csdn.net/wuxu_nanjing/article/details/78676118" target="_blank" rel="noopener">cscn博客：Linux中的文件特殊权限</a></p>
 </blockquote>
 
       
@@ -602,7 +712,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#常用的处理目录的命令"><span class="nav-number">1.</span> <span class="nav-text">常用的处理目录的命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件与目录管理"><span class="nav-number">2.</span> <span class="nav-text">文件与目录管理</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#常用的处理目录的命令"><span class="nav-number">1.</span> <span class="nav-text">常用的处理目录的命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件与目录管理"><span class="nav-number">2.</span> <span class="nav-text">文件与目录管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件内容的查看"><span class="nav-number">3.</span> <span class="nav-text">文件内容的查看</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件的默认权限：umask"><span class="nav-number">4.</span> <span class="nav-text">文件的默认权限：umask</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件的特殊权限：SUID、SGID、SBIT"><span class="nav-number">5.</span> <span class="nav-text">文件的特殊权限：SUID、SGID、SBIT</span></a></li></ol></div>
             
 
           </div>
