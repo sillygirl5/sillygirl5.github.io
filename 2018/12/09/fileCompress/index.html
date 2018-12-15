@@ -97,7 +97,7 @@
 
 
 
-  <meta name="keywords" content="KT">
+  <meta name="keywords" content="Linux,">
 
 
 
@@ -108,14 +108,18 @@
 
 
 
+<meta name="description" content="Linux系统常见的压缩命令 gzip [cdtc#] 文件名  c：将压缩的数据输出到屏幕上； d：解压缩的参数； t：用来检验一个压缩文件的一致性，看看文件是否有误； v：显示出原文件／压缩文件的压缩比信息； #：#为数字的意思，-1最快，压缩比最差，-9最慢，但是压缩比最快，默认是-6；   使用gzip压缩，默认情况下文件会被压缩成.gz的后缀文件，源文件就不存在了。      bzip2">
+<meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="fileCompress">
+<meta property="og:title" content="文件与文件系统的压缩">
 <meta property="og:url" content="http://yoursite.com/2018/12/09/fileCompress/index.html">
 <meta property="og:site_name" content="爱生活，爱学习">
+<meta property="og:description" content="Linux系统常见的压缩命令 gzip [cdtc#] 文件名  c：将压缩的数据输出到屏幕上； d：解压缩的参数； t：用来检验一个压缩文件的一致性，看看文件是否有误； v：显示出原文件／压缩文件的压缩比信息； #：#为数字的意思，-1最快，压缩比最差，-9最慢，但是压缩比最快，默认是-6；   使用gzip压缩，默认情况下文件会被压缩成.gz的后缀文件，源文件就不存在了。      bzip2">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-09T02:30:00.000Z">
+<meta property="og:updated_time" content="2018-12-15T02:36:38.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="fileCompress">
+<meta name="twitter:title" content="文件与文件系统的压缩">
+<meta name="twitter:description" content="Linux系统常见的压缩命令 gzip [cdtc#] 文件名  c：将压缩的数据输出到屏幕上； d：解压缩的参数； t：用来检验一个压缩文件的一致性，看看文件是否有误； v：显示出原文件／压缩文件的压缩比信息； #：#为数字的意思，-1最快，压缩比最差，-9最慢，但是压缩比最快，默认是-6；   使用gzip压缩，默认情况下文件会被压缩成.gz的后缀文件，源文件就不存在了。      bzip2">
 
 
 
@@ -151,7 +155,7 @@
 
 
 
-  <title>fileCompress | 爱生活，爱学习</title>
+  <title>文件与文件系统的压缩 | 爱生活，爱学习</title>
   
 
 
@@ -285,7 +289,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">fileCompress</h2>
+          <h2 class="post-title" itemprop="name headline">文件与文件系统的压缩</h2>
         
 
         <div class="post-meta">
@@ -381,7 +385,40 @@
       
 
       
-        
+        <h3 id="Linux系统常见的压缩命令"><a href="#Linux系统常见的压缩命令" class="headerlink" title="Linux系统常见的压缩命令"></a>Linux系统常见的压缩命令</h3><ul>
+<li><p>gzip [cdtc#] 文件名</p>
+<ul>
+<li>c：将压缩的数据输出到屏幕上；</li>
+<li>d：解压缩的参数；</li>
+<li>t：用来检验一个压缩文件的一致性，看看文件是否有误；</li>
+<li>v：显示出原文件／压缩文件的压缩比信息；</li>
+<li><p>#：#为数字的意思，-1最快，压缩比最差，-9最慢，但是压缩比最快，默认是-6；</p>
+<blockquote>
+<ul>
+<li>使用gzip压缩，默认情况下文件会被压缩成.gz的后缀文件，源文件就不存在了。</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>bzip2 [cdkzv#] 文件名</p>
+<ul>
+<li><p>k：保留原始文件，而不会删除原始文件；</p>
+<blockquote>
+<ul>
+<li>使用bzip2压缩，默认情况下文件会被压缩成.bz2的后缀名。</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>xz [dtlkc#] 文件名</p>
+<ul>
+<li>l：列出压缩文件的相关信息      </li>
+</ul>
+</li>
+</ul>
+
       
     </div>
     
@@ -395,6 +432,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
+          
+        </div>
       
 
       
@@ -477,8 +520,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -532,6 +584,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux系统常见的压缩命令"><span class="nav-number">1.</span> <span class="nav-text">Linux系统常见的压缩命令</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -746,7 +814,7 @@ var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours
         var disqus_config = function () {
           this.page.url = 'http://yoursite.com/2018/12/09/fileCompress/';
           this.page.identifier = '2018/12/09/fileCompress/';
-          this.page.title = 'fileCompress';
+          this.page.title = '文件与文件系统的压缩';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://.disqus.com/embed.js';
