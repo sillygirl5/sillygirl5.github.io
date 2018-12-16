@@ -108,18 +108,18 @@
 
 
 
-<meta name="description" content="Linux系统常见的压缩命令 gzip [cdtc#] 文件名  c：将压缩的数据输出到屏幕上； d：解压缩的参数； t：用来检验一个压缩文件的一致性，看看文件是否有误； v：显示出原文件／压缩文件的压缩比信息； #：#为数字的意思，-1最快，压缩比最差，-9最慢，但是压缩比最快，默认是-6；   使用gzip压缩，默认情况下文件会被压缩成.gz的后缀文件，源文件就不存在了。      bzip2">
+<meta name="description" content="Linux系统常见的压缩命令 gzip [-cdtc#] 文件名  c：将压缩的数据输出到屏幕上； d：解压缩的参数； t：用来检验一个压缩文件的一致性，看看文件是否有误； v：显示出原文件／压缩文件的压缩比信息； #：#为数字的意思，-1最快，压缩比最差，-9最慢，但是压缩比最快，默认是-6；   使用gzip压缩，默认情况下文件会被压缩成.gz的后缀文件，源文件就不存在了。      bzip">
 <meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="文件与文件系统的压缩">
 <meta property="og:url" content="http://sillygirl5.com/2018/12/09/fileCompress/index.html">
 <meta property="og:site_name" content="爱生活，爱学习">
-<meta property="og:description" content="Linux系统常见的压缩命令 gzip [cdtc#] 文件名  c：将压缩的数据输出到屏幕上； d：解压缩的参数； t：用来检验一个压缩文件的一致性，看看文件是否有误； v：显示出原文件／压缩文件的压缩比信息； #：#为数字的意思，-1最快，压缩比最差，-9最慢，但是压缩比最快，默认是-6；   使用gzip压缩，默认情况下文件会被压缩成.gz的后缀文件，源文件就不存在了。      bzip2">
+<meta property="og:description" content="Linux系统常见的压缩命令 gzip [-cdtc#] 文件名  c：将压缩的数据输出到屏幕上； d：解压缩的参数； t：用来检验一个压缩文件的一致性，看看文件是否有误； v：显示出原文件／压缩文件的压缩比信息； #：#为数字的意思，-1最快，压缩比最差，-9最慢，但是压缩比最快，默认是-6；   使用gzip压缩，默认情况下文件会被压缩成.gz的后缀文件，源文件就不存在了。      bzip">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-15T03:50:01.000Z">
+<meta property="og:updated_time" content="2018-12-16T08:11:03.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="文件与文件系统的压缩">
-<meta name="twitter:description" content="Linux系统常见的压缩命令 gzip [cdtc#] 文件名  c：将压缩的数据输出到屏幕上； d：解压缩的参数； t：用来检验一个压缩文件的一致性，看看文件是否有误； v：显示出原文件／压缩文件的压缩比信息； #：#为数字的意思，-1最快，压缩比最差，-9最慢，但是压缩比最快，默认是-6；   使用gzip压缩，默认情况下文件会被压缩成.gz的后缀文件，源文件就不存在了。      bzip2">
+<meta name="twitter:description" content="Linux系统常见的压缩命令 gzip [-cdtc#] 文件名  c：将压缩的数据输出到屏幕上； d：解压缩的参数； t：用来检验一个压缩文件的一致性，看看文件是否有误； v：显示出原文件／压缩文件的压缩比信息； #：#为数字的意思，-1最快，压缩比最差，-9最慢，但是压缩比最快，默认是-6；   使用gzip压缩，默认情况下文件会被压缩成.gz的后缀文件，源文件就不存在了。      bzip">
 
 
 
@@ -386,7 +386,7 @@
 
       
         <h3 id="Linux系统常见的压缩命令"><a href="#Linux系统常见的压缩命令" class="headerlink" title="Linux系统常见的压缩命令"></a>Linux系统常见的压缩命令</h3><ul>
-<li><p>gzip [cdtc#] 文件名</p>
+<li><p>gzip [-cdtc#] 文件名</p>
 <ul>
 <li>c：将压缩的数据输出到屏幕上；</li>
 <li>d：解压缩的参数；</li>
@@ -401,7 +401,7 @@
 </li>
 </ul>
 </li>
-<li><p>bzip2 [cdkzv#] 文件名</p>
+<li><p>bzip2 [-cdkzv#] 文件名</p>
 <ul>
 <li><p>k：保留原始文件，而不会删除原始文件；</p>
 <blockquote>
@@ -412,12 +412,66 @@
 </li>
 </ul>
 </li>
-<li><p>xz [dtlkc#] 文件名</p>
+<li><p>xz [-dtlkc#] 文件名</p>
 <ul>
-<li>l：列出压缩文件的相关信息      </li>
+<li><p>l：列出压缩文件的相关信息      </p>
+<blockquote>
+<ul>
+<li>使用xz压缩，默认情况下文件会被压缩成.xz2的后缀名。</li>
+</ul>
+</blockquote>
+</li>
 </ul>
 </li>
 </ul>
+<p><strong><font color="red">Note</font></strong>    </p>
+<blockquote>
+<ul>
+<li>从文件大小可以看出，压缩比例xz&gt;bz2&gt;gzip</li>
+<li>zip、bzip2、xz仅能对文件进行压缩，不能对目录进行压缩</li>
+</ul>
+</blockquote>
+<h3 id="打包命令：tar"><a href="#打包命令：tar" class="headerlink" title="打包命令：tar"></a>打包命令：tar</h3><ul>
+<li>tar [-z][-j][-J] [cv] [-f 待建立的新文件名] filename  &lt;— 打包与压缩</li>
+<li>tar [-z][-j][-J] [tv] [-f 既有的tar文件名] &lt;— 查看文件名</li>
+<li>tar [-z][-j][-J] [xv] [-f 既有的tar文件名] [-C 目录] &lt;— 解压</li>
+</ul>
+<blockquote>
+<ul>
+<li>c：建立压缩档案</li>
+<li>x：解压</li>
+<li>t：查看内容</li>
+<li>r:向压缩归档文件末尾追加文件</li>
+<li>u:更新原压缩包中的文件</li>
+</ul>
+<p><strong><font color="red">Note:这五个是独立的命令，压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个</font></strong></p>
+</blockquote>
+<p>下面的参数是根据压缩或解压缩时可选的：</p>
+<ul>
+<li>z：有gzip属性的，此时文件名最好为：*.tar.gz;</li>
+<li>j：有bz2属性的,此时文件名最好为：*.tar.bz2;</li>
+<li>J：有xz属性的,此时文件名最好为：*.tar.xz;</li>
+</ul>
+<blockquote>
+<p><strong><font color="red">Note: -z,-j,-J不可以同时出现在一串命令里</font></strong></p>
+</blockquote>
+<ul>
+<li>v：显示所有过程，将正在处理的文件名显示出来</li>
+<li>O：将文件解开到标准输出</li>
+<li>f filename：这个是必须的，<strong>Note：这个参数是最后一个参数，后面只能接档案名</strong></li>
+<li>C 目录：在解压缩的时候，指定解压缩的路径</li>
+</ul>
+<h4 id="常用到的压缩和解压缩的命令："><a href="#常用到的压缩和解压缩的命令：" class="headerlink" title="常用到的压缩和解压缩的命令："></a>常用到的压缩和解压缩的命令：</h4><ul>
+<li>压缩： tar -jcv -f filename.tar.bz2 要被压缩的文件或目录名称</li>
+<li>查询：tar -jtv -f filename.bz2</li>
+<li>解压缩： tar -jxv -f filename.tar.bz2 -C 欲解压缩的目录</li>
+</ul>
+<blockquote>
+<ul>
+<li>参考1:鸟哥的Linux私房菜第8章：文件与文件系统的压缩</li>
+<li>参考2:<a href="https://www.cnblogs.com/newcaoguo/p/5896975.html" target="_blank" rel="noopener">博客：linux中tar命令用法</a></li>
+</ul>
+</blockquote>
 
       
     </div>
@@ -594,7 +648,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux系统常见的压缩命令"><span class="nav-number">1.</span> <span class="nav-text">Linux系统常见的压缩命令</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux系统常见的压缩命令"><span class="nav-number">1.</span> <span class="nav-text">Linux系统常见的压缩命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打包命令：tar"><span class="nav-number">2.</span> <span class="nav-text">打包命令：tar</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#常用到的压缩和解压缩的命令："><span class="nav-number">2.1.</span> <span class="nav-text">常用到的压缩和解压缩的命令：</span></a></li></ol></li></ol></div>
             
 
           </div>
